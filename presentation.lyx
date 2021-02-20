@@ -691,5 +691,559 @@ S=\frac{n}{2}\left(n+1\right)=\boxed{O\left(n^{2}\right)}
 
 \end_layout
 
+\begin_layout Section
+דוגמאות לאחר הרצה:
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+1
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+1
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test1.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+2
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+2
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test2.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+3
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+3
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test3.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+4
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+4
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test4.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+5
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+5
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test5.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+6
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+דוגמה
+\family sans
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color blue
+ 
+\family default
+\series default
+\shape default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\lang english
+N
+\begin_inset Formula $\text{\textdegree}$
+\end_inset
+
+6
+\lang hebrew
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test6.eps
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

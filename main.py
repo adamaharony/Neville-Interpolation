@@ -52,12 +52,14 @@ def neville(x_data, y_data, x_arr):
     return y_fit, Q_arr
 
 
-def plot_and_test(x_data, y_data):
+def plot_and_test(x_data, y_data, index=0):
     x_arr = np.linspace(x_data[0] - 0.5, x_data[len(x_data) - 1] + 0.5, 100)
     y_fit, Q_arr = neville(x_data, y_data, x_arr)
-    plt.figure()
+
+    plt.figure(figsize=(8, 3))
     plt.grid()
     plt.plot(x_arr, y_fit, "--", label="Fit", color=(0.9765625, 0.2265625, 0.4765625, 1), linewidth=3)
     plt.plot(x_data, y_data, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
     plt.legend()
+    plt.savefig(f"plots/test{str(index)}.eps", format="eps")
     plt.show()
