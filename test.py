@@ -51,3 +51,29 @@ plt.plot(x_data4, y_data4, "o", label="Data", color=(0, 0.52734375, 0.94921875, 
 plt.plot(x_arr4, y_fit4, "--", label="Fit", color=(0.9765625, 0.2265625, 0.4765625, 1), linewidth=3)
 plt.legend()
 plt.show()
+
+# _________________________________________________
+
+x_data5 = np.array([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
+y_data5 = np.array([31.5, 19.8, 10.9, 4.64, 1.09, 0, 0.89, 3.04, 5.49, 7.04, 6.25])
+x_arr5 = np.linspace(-5.2, 5.2, 100)
+y_fit5, Q_arr5 = neville(x_data5, y_data5, x_arr5)
+plt.figure()
+plt.grid()
+plt.plot(x_data5, y_data5, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
+plt.plot(x_arr5, y_fit5, "--", label="Fit", color=(0.9765625, 0.2265625, 0.4765625, 1), linewidth=3)
+plt.legend()
+plt.show()
+
+# _________________________________________________
+
+x_data6 = np.array([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
+y_data6 = np.array([0.0384, 0.0588, 0.1, 0.2, 0.5, 1, 0.5, 0.2, 0.1, 0.0855, 0.0384])
+x_arr6 = np.linspace(-5.2, 5.2, 100)
+y_fit6, Q_arr6 = neville(x_data6, y_data6, x_arr6)
+plt.figure()
+plt.grid()
+plt.plot(x_data6, y_data6, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
+plt.plot(x_arr6, y_fit6, "--", label="Fit", color=(0.9765625, 0.2265625, 0.4765625, 1), linewidth=3)
+plt.legend()
+plt.show()
