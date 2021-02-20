@@ -1,5 +1,5 @@
 import numpy as np
-from main import neville, plot_and_test
+from main import plot_and_test
 
 x_data1 = np.array([0.25, 0.5, 0.75, 1, 1.25])
 y_data1 = np.array([0.5, 0.75, 0.6, 0.8, 1.1])
