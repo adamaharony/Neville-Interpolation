@@ -776,17 +776,56 @@ N
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test1.eps
-	width 90text%
+	filename plots/plot1.eps
+	width 80text%
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/test1.eps
+	width 100text%
+
+\end_inset
+
 
 \end_layout
 
@@ -868,13 +907,56 @@ N
 
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/plot2.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
 \begin_layout Frame
 \begin_inset Graphics
 	filename plots/test2.eps
-	width 90text%
+	width 100text%
 
 \end_inset
 
@@ -959,16 +1041,63 @@ N
 
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/plot3.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
 \begin_layout Frame
 \begin_inset Graphics
 	filename plots/test3.eps
-	width 90text%
+	width 100text%
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1050,16 +1179,63 @@ N
 
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/plot4.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
 \begin_layout Frame
 \begin_inset Graphics
 	filename plots/test4.eps
-	width 90text%
+	width 100text%
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1141,16 +1317,63 @@ N
 
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/plot5.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
 \begin_layout Frame
 \begin_inset Graphics
 	filename plots/test5.eps
-	width 90text%
+	width 100text%
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1235,10 +1458,53 @@ N
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+הפונקצייה לפני אינטרפולאצייה:
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename plots/plot6.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפונקצייה אחרי אינטרפולאצייה:
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Graphics
 	filename plots/test6.eps
-	width 90text%
+	width 100text%
 
 \end_inset
 

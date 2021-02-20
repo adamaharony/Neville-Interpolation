@@ -63,3 +63,10 @@ def plot_and_test(x_data, y_data, index=0):
     plt.legend()
     plt.savefig(f"plots/test{str(index)}.eps", format="eps")
     plt.show()
+
+def plot(x_data, y_data, index=0):
+    plt.figure(figsize=(8, 3))
+    plt.grid()
+    plt.plot(x_data, y_data, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
+    plt.savefig(f"plots/plot{str(index)}.eps", format="eps")
+    plt.show()
