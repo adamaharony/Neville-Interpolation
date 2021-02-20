@@ -53,7 +53,7 @@ def neville(x_data, y_data, x_arr):
 
 
 def plot_and_test(x_data, y_data, index=0):
-    x_arr = np.linspace(x_data[0] - 0.5, x_data[len(x_data) - 1] + 0.5, 100)
+    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 100)
     y_fit, Q_arr = neville(x_data, y_data, x_arr)
 
     plt.figure(figsize=(8, 3))
