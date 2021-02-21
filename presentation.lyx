@@ -7,6 +7,9 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Berlin}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+
 
 \definecolor{pink}{rgb}{0.9765625, 0.2265625, 0.4765625} 
 \definecolor{blue}{rgb}{0, 0.52734375, 0.94921875}
@@ -24,6 +27,9 @@
 \end_preamble
 \options aspectratio=169
 \use_default_options false
+\begin_modules
+shapepar
+\end_modules
 \maintain_unincluded_children false
 \language hebrew
 \language_package default
@@ -89,7 +95,7 @@
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0.5em
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style english
@@ -125,7 +131,7 @@ Neville's Method
 \begin_layout Author
 אדם אהרוני 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -251,6 +257,22 @@ status open
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 בהינתן 
 \begin_inset Formula $n+1$
 \end_inset
@@ -302,6 +324,10 @@ Neville
 \color none
 \lang hebrew
  ניתן להגיע לאותו פולינום.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -366,6 +392,22 @@ Neville
 ועל מציאת הפרשים מחולקים.
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 תהליך מציאת הפולינום
 \end_layout
@@ -376,6 +418,22 @@ status open
 
 \begin_layout Plain Layout
 תהליך מציאת הפולינום:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
 \end_layout
 
 \end_inset
@@ -404,7 +462,7 @@ status open
 \begin_inset Formula 
 \begin{align*}
 \forall i & =0\dots n:\\
- & p\left(x_{i}\right)=y_{i}
+ & \qquad p\left(x_{i}\right)=y_{i}
 \end{align*}
 
 \end_inset
@@ -474,9 +532,9 @@ Neville
 \end_inset
 
  כלשהי.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Frame
 
 \end_layout
 
@@ -501,6 +559,22 @@ Neville
  
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -509,6 +583,22 @@ Neville
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -536,6 +626,22 @@ p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\
  
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 דוגמה
 \end_layout
@@ -554,13 +660,29 @@ status open
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 ניקח את 
 \begin_inset Formula $n=4$
 \end_inset
 
 .
  נוכל להשתמש בנוסחת הרקורסייה על מנת למלא את התרשים משמאל לימין באופן הבא:
-\size small
+\size footnotesize
 
 \begin_inset Formula 
 \[
@@ -581,6 +703,22 @@ p_{4;\,4}\left(x\right)=y_{4}
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -589,6 +727,22 @@ p_{4;\,4}\left(x\right)=y_{4}
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -627,11 +781,31 @@ p_{4;\,4}\left(x\right)=y_{4}
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
 \begin_layout Section
 זמן הריצה של האלגוריתם
+\end_layout
+
+\begin_layout Subsection
+הוכחה
 \end_layout
 
 \begin_layout Frame
@@ -640,6 +814,22 @@ status open
 
 \begin_layout Plain Layout
 זמן הריצה של האלגוריתם:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
 \end_layout
 
 \end_inset
@@ -682,9 +872,26 @@ n+\left(n-1\right)+\left(n-2\right)+\dots+1
 \begin_layout Frame
 מדובר בסדרה חשבונית, שסכומה מובא על ידיי:
 \begin_inset Formula 
-\[
-S=\frac{n}{2}\left(n+1\right)=\boxed{O\left(n^{2}\right)}
-\]
+\begin{align*}
+S & =\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}=\frac{n^{2}}{2}+\frac{n}{2}=\\
+ & =\boxed{O\left(n^{2}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
 
 \end_inset
 
@@ -724,12 +931,10 @@ S=\frac{n}{2}\left(n+1\right)=\boxed{O\left(n^{2}\right)}
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 1
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -763,7 +968,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 1
@@ -858,12 +1063,10 @@ N
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 2
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -897,7 +1100,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 2
@@ -992,12 +1195,10 @@ N
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 3
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -1031,7 +1232,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 3
@@ -1130,12 +1331,10 @@ N
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 4
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -1169,7 +1368,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 4
@@ -1268,12 +1467,10 @@ N
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 5
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -1307,7 +1504,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 5
@@ -1406,12 +1603,10 @@ N
 \color inherit
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 6
-\lang hebrew
-:
 \end_layout
 
 \begin_layout Frame
@@ -1445,7 +1640,7 @@ status open
 \noun default
 \lang english
 N
-\begin_inset Formula $\text{\textdegree}$
+\begin_inset Formula $\text{°}$
 \end_inset
 
 6
