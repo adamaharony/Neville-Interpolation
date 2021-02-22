@@ -16,10 +16,10 @@
 
 \setbeamercolor{palette primary}{bg=pink,fg=white}
 %\setbeamercolor{palette secondary}{bg=pink,fg=white}
-%\setbeamercolor{palette tertiary}{bg=pink,fg=white}
-%\setbeamercolor{palette quaternary}{bg=pink,fg=white}
+%\setbeamercolor{palette tertiary}{bg=blue,fg=white}
+%\setbeamercolor{palette quaternary}{bg=blue,fg=white}
 \setbeamercolor{structure}{fg=pink} % itemize, enumerate, etc
-\setbeamercolor{section in toc}{fg=pink} % TOC sections
+\setbeamercolor{section in toc}{fg=white} % TOC sections
 % or ...
 
 %\setbeamercovered{transparent}
@@ -58,7 +58,7 @@ shapepar
 \use_hyperref true
 \pdf_author "Adam Aharony"
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
+\pdf_bookmarksnumbered true
 \pdf_bookmarksopen false
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
@@ -173,7 +173,16 @@ and
 \noun default
 \color inherit
 \lang english
-HIT
+
+\begin_inset CommandInset href
+LatexCommand href
+name "HIT"
+target "https://hit.ac.il"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Date
@@ -243,6 +252,10 @@ HIT
 רקע תיאורטי
 \end_layout
 
+\begin_layout Subsection
+פרולוג
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -277,7 +290,7 @@ begin{flushright}
 \begin_inset Formula $n+1$
 \end_inset
 
- נקודות, קיים פולינום ייחודי מסדר 
+ נקודות דאטה, קיים פולינום ייחודי מסדר 
 \begin_inset Formula $\leq n$
 \end_inset
 
@@ -323,7 +336,7 @@ Neville
 \noun off
 \color none
 \lang hebrew
- ניתן להגיע לאותו פולינום.
+ ניתן להגיע לערך אותו פולינום בנקודה כלשהי.
 \begin_inset Newline newline
 \end_inset
 
@@ -335,6 +348,29 @@ Neville
 \end_layout
 
 \begin_layout Frame
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="90text%">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 השיטה מבוססת על שיטת האינטרפולאצייה של ניוטון
 \family sans
 \series medium
@@ -390,6 +426,31 @@ Neville
 \noun default
 \color inherit
 ועל מציאת הפרשים מחולקים.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color pink
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -408,8 +469,15 @@ end{flushright}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-תהליך מציאת הפולינום
+פולינום האינטרפולאצייה
 \end_layout
 
 \begin_layout Frame
@@ -417,7 +485,7 @@ end{flushright}
 status open
 
 \begin_layout Plain Layout
-תהליך מציאת הפולינום:
+פולינום האינטרפולאצייה:
 \end_layout
 
 \end_inset
@@ -446,11 +514,15 @@ begin{flushright}
 \begin_inset Formula $n+1$
 \end_inset
 
- נקודות 
-\begin_inset Formula $\left(x_{i};\,y_{i}\right)$
+ נקודות דאטה 
+\begin_inset Formula $\left(x_{k};\,y_{k}\right)$
 \end_inset
 
- כאשר שיעורי ה-
+, 
+\begin_inset Formula $k=0;\,1;\dots;\,n$
+\end_inset
+
+, כאשר שיעורי ה-
 \begin_inset Formula $x$
 \end_inset
 
@@ -461,9 +533,52 @@ begin{flushright}
  המקיים את:
 \begin_inset Formula 
 \begin{align*}
-\forall i & =0\dots n:\\
- & \qquad p\left(x_{i}\right)=y_{i}
+\forall k & =0;\,1;\dots;\,n:\\
+ & \qquad p\left(x_{k}\right)=y_{k}
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
 
 \end_inset
 
@@ -526,37 +641,233 @@ Neville
 \uwave default
 \noun default
 \color inherit
-מוצאת את ערך הפולינום הנ.ל.
+מוצאת את ערך פולינום האינטרפולאצייה הנ.ל.
  בנקודה 
 \begin_inset Formula $x$
 \end_inset
 
  כלשהי.
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+נגדיר פולינום 
+\begin_inset Formula $p_{i;\,j}\left(x\right)$
+\end_inset
+
+ )כאשר מתקיים 
+\begin_inset Formula $i\leq j$
+\end_inset
+
+( בתור פולינום מסדר של 
+\begin_inset Formula $j-i$
+\end_inset
+
+ העובר דרך נקודות הדאטה הנתונות 
+\begin_inset Formula $\left(x_{k};\,y_{k}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k=i;\,i+1;\dots;\,j$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תהליך מציאת הפולינום
+\end_layout
+
+\begin_layout Subsection
+מאפייניי פולינום האינטרפולאצייה
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+תהליך מציאת הפולינום:
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Frame
-נגדיר את הפולינום 
-\begin_inset Formula $p_{i;\,j}\left(x\right)$
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
 \end_inset
 
- בתור פולינום מסדר של 
-\begin_inset Formula $j-i$
+
+\end_layout
+
+\begin_layout Frame
+על הפולינומים לקיים את היחס הרקורסיבי:
+\begin_inset Formula 
+\[
+\begin{cases}
+p_{i;\,i}\left(x\right) & =y_{i}\\
+p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\left(x-x_{i}\right)p_{i+1;\,j}\left(x\right)}{x_{i}-x_{j}}
+\end{cases}\,;\quad\begin{matrix}0\leq i\leq n\\
+0\leq i<j\leq n
+\end{matrix}
+\]
+
 \end_inset
 
- העובר דרך הנקודות הנתונות 
+נוסחת הנסיגה הזו יכולה לחשב את 
+\begin_inset Formula $p_{0;\,n}\left(x\right)$
+\end_inset
+
+, שהוא הערך אותו אנו מחפשים.
+ 
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+הוכחה:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+הוכחת הנוסחה הרקורסיבית:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+הביטוי 
+\begin_inset Formula $p_{i;\,i}\left(x\right)=y_{i}$
+\end_inset
+
+ הוא מיידי, ואת הנוסחה הרקורסיבית נוכיח באמצעות אינדוקצייה:
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+בהינתן 
+\begin_inset Formula $i;\,j$
+\end_inset
+
+ עם פולינום 
+\begin_inset Formula $p_{i;\,j-1}\left(x\right)$
+\end_inset
+
+ העובר דרך הנקודות 
 \begin_inset Formula $\left(x_{k};\,y_{k}\right)$
 \end_inset
 
- עבור 
-\begin_inset Formula $k=i\dots j$
+ עם 
+\begin_inset Formula $k=i;\,i+1;\dots;\,j-1$
+\end_inset
+
+, וכן הפולינום 
+\begin_inset Formula $p_{i+1;\,j}\left(x\right)$
+\end_inset
+
+ העובר דרך הנקודות 
+\begin_inset Formula $\left(x_{k};\,y_{k}\right)$
+\end_inset
+
+ עם 
+\begin_inset Formula $k=i+1;\,i+2;\dots;\,j$
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+לפי ההנחה הנ.ל.
+ מתקיים:
+\begin_inset Formula 
+\[
+\begin{cases}
+p_{i;\,j-1}\left(x_{k}\right)=y_{k} & i\leq k\leq j-1\\
+p_{i+1;\,j}\left(x_{k}\right)=y_{k} & i-1\leq k\leq j
+\end{cases}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -603,12 +914,25 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
-על הפולינום לקיים את היחס הרקורסיבי:
+ולכן, עבור 
+\begin_inset Formula $i+1\leq k\leq j-1$
+\end_inset
+
+, מתקבל:
+\begin_inset Formula 
+\begin{align*}
+p_{i;\,j}\left(x_{k}\right) & =\frac{\left(x_{k}-x_{j}\right)p_{i;\,j-1}\left(x_{k}\right)-\left(x_{k}-x_{i}\right)p_{i+1;\,j}\left(x_{k}\right)}{x_{i}-x_{j}}=\\
+ & =\frac{\left(x_{k}-x_{j}\right)y_{k}-\left(x_{k}-x_{i}\right)y_{k}}{x_{i}-x_{j}}=y_{k}
+\end{align*}
+
+\end_inset
+
+וכן:
 \begin_inset Formula 
 \[
 \begin{cases}
-p_{i;\,i}\left(x\right) & =y_{i}\,;\qquad0\leq i\leq n\\
-p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\left(x-x_{i}\right)p_{i+1;\,j}\left(x\right)}{x_{i}-x_{j}}\,;\qquad0\leq i<j\leq n
+p_{i;\,j}\left(x_{i}\right) & =\frac{\left(x_{i}-x_{j}\right)p_{i;\,j-1}\left(x_{i}\right)}{x_{i}-x_{j}}=y_{i}\\
+p_{i;\,j}\left(x_{j}\right) & =\frac{-\left(x_{j}-x_{i}\right)p_{i+1;\,j}\left(x_{j}\right)}{x_{i}-x_{j}}=y_{j}
 \end{cases}
 \]
 
@@ -618,12 +942,36 @@ p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\
 \end_layout
 
 \begin_layout Frame
-נוסחת הנסיגה הזו יכולה לחשב את 
-\begin_inset Formula $p_{0;\,n}\left(x\right)$
+
+\end_layout
+
+\begin_layout Frame
+ולכן 
+\begin_inset Formula $p_{i;\,j}\left(x\right)$
 \end_inset
 
-, שהוא הערך אותו אנו מחפשים.
+ עובר דרך כל הנקודות 
+\begin_inset Formula $\left(x_{k};\,y_{k}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $k=i;\,i+1;\dots;\,j$
+\end_inset
+
+.
  
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\series bold
+\bar under
+\color blue
+הוכח.
+\end_layout
+
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Frame
@@ -767,6 +1115,18 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -777,7 +1137,7 @@ begin{flushright}
 \begin_inset Formula $O\left(n^{2}\right)$
 \end_inset
 
-.(
+, הוכחה בהמשך(
 \end_layout
 
 \begin_layout Frame
@@ -858,11 +1218,16 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
 מכאן, גודל הפולינומים שמחשבים מובא על ידיי:
 \begin_inset Formula 
-\[
-n+\left(n-1\right)+\left(n-2\right)+\dots+1
-\]
+\begin{align*}
+n+\left(n-1\right)+\left(n-2\right)+\dots+1 & =\\
+ & =\sum_{i=1}^{n}i
+\end{align*}
 
 \end_inset
 
@@ -870,7 +1235,51 @@ n+\left(n-1\right)+\left(n-2\right)+\dots+1
 \end_layout
 
 \begin_layout Frame
-מדובר בסדרה חשבונית, שסכומה מובא על ידיי:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+מדובר בסכום סדרה חשבונית סטאנדארטית.
+ לא קשה לראות שהסכום מקיים:
 \begin_inset Formula 
 \begin{align*}
 S & =\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}=\frac{n^{2}}{2}+\frac{n}{2}=\\
@@ -879,7 +1288,20 @@ S & =\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}=\frac{n^{2}}{2}+\frac{n}{2}=\\
 
 \end_inset
 
+ומכאן, הגענו לזמן ריצה של 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
 
+.
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\series bold
+\bar under
+\color blue
+הוכח.
 \end_layout
 
 \begin_layout Frame
@@ -993,7 +1415,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot1.eps
+	filename plots/plot/1.eps
 	width 80text%
 
 \end_inset
@@ -1026,7 +1448,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test1.eps
+	filename plots/test/1.eps
 	width 100text%
 
 \end_inset
@@ -1125,7 +1547,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot2.eps
+	filename plots/plot/2.eps
 	width 80text%
 
 \end_inset
@@ -1158,11 +1580,15 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test2.eps
+	filename plots/test/2.eps
 	width 100text%
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1257,7 +1683,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot3.eps
+	filename plots/plot/3.eps
 	width 80text%
 
 \end_inset
@@ -1290,15 +1716,11 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test3.eps
+	filename plots/test/3.eps
 	width 100text%
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
@@ -1393,7 +1815,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot4.eps
+	filename plots/plot/4.eps
 	width 80text%
 
 \end_inset
@@ -1426,15 +1848,11 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test4.eps
+	filename plots/test/4.eps
 	width 100text%
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
@@ -1529,7 +1947,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot5.eps
+	filename plots/plot/5.eps
 	width 80text%
 
 \end_inset
@@ -1562,15 +1980,11 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test5.eps
+	filename plots/test/5.eps
 	width 100text%
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
@@ -1665,7 +2079,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/plot6.eps
+	filename plots/plot/6.eps
 	width 80text%
 
 \end_inset
@@ -1698,7 +2112,7 @@ N
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename plots/test6.eps
+	filename plots/test/6.eps
 	width 100text%
 
 \end_inset

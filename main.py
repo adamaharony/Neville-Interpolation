@@ -1,5 +1,4 @@
 import numpy as np
-from matplotlib import pyplot as plt
 
 
 def neville_point(x_data, y_data, x_0):
@@ -52,21 +51,44 @@ def neville(x_data, y_data, x_arr):
     return y_fit, Q_arr
 
 
-def plot_and_test(x_data, y_data, index=0):
-    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 100)
-    y_fit, Q_arr = neville(x_data, y_data, x_arr)
+def lagrange_point(x_data, y_data, x0):
+    """
+       Interpolates around a point using Lagrange's method.
 
-    plt.figure(figsize=(8, 3))
-    plt.grid()
-    plt.plot(x_arr, y_fit, "--", label="Fit", color=(0.9765625, 0.2265625, 0.4765625, 1), linewidth=3)
-    plt.plot(x_data, y_data, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
-    plt.legend()
-    plt.savefig(f"plots/test{str(index)}.eps", format="eps")
-    plt.show()
+       :param x_data: numpy.ndarray of x values
+       :param y_data: numpy.ndarray of y values
+       :param x_0: x value to interpolate
+       :returns y_fit:  interpolated y value
+    """
 
-def plot(x_data, y_data, index=0):
-    plt.figure(figsize=(8, 3))
-    plt.grid()
-    plt.plot(x_data, y_data, "o", label="Data", color=(0, 0.52734375, 0.94921875, 1))
-    plt.savefig(f"plots/plot{str(index)}.eps", format="eps")
-    plt.show()
+    n = x_data.size
+    y_fit = 0
+
+    for i in range(0, n):
+        p = y_data[i]
+        for j in range(0, n):
+            if i != j:
+                p = p * (x0 - x_data[j]) / (x_data[i] - x_data[j])
+        y_fit += p
+
+    return y_fit
+
+
+def lagrange(x_data, y_data, x_arr):
+    """
+        Interpolates an entire array using Lagrange's method.
+
+        :param x_data: numpy.ndarray of x values
+        :param y_data: numpy.ndarray of y values
+        :param x_0: numpy.ndarray of x values to interpolate
+        :return y_fit:  numpy.ndarray of interpolated y values
+    """
+
+    n = x_arr.size
+    y_fit = np.ndarray(n)
+
+    for i in range(n):
+        y = lagrange_point(x_data, y_data, x_arr[i])
+        y_fit[i] = y
+
+    return y_fit
