@@ -56,7 +56,7 @@ shapepar
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_author "Adam Aharony"
+\pdf_author "Adam Aharony, Maor Valdman"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen false
@@ -66,6 +66,7 @@ shapepar
 \pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle true
+\pdf_pagemode FullScreen
 \papersize default
 \use_geometry true
 \use_package amsmath 2
@@ -248,6 +249,172 @@ literal "false"
 .
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+פרולוג:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+במסגרת פרוייקט זה, נסביר, נפרט, ונראה בפעולה על שיטת האינטרפולאצייה לפי
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Neville
+\lang hebrew
+.
+ נוכיח גם איך היא עובדת, נראה דוגמאות, וכן נשווה מול שיטות אינטרפולאצייה
+ אחרות שלמדנו בקורס.
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+במסגרת הפרוייקט הרחבנו את אופקינו בתחום האנאליזה הנומרית והאינטרפולאצייה.
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+הפרוייקט גרם לנו לחקור את שיטת
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Neville
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד תום, ובכך נתן לנו מקור להשוואה עם שיטות אינטרפולאצייה אחרות.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 רקע תיאורטי
 \end_layout
@@ -344,6 +511,18 @@ Neville
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -654,6 +833,22 @@ Neville
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 נגדיר פולינום 
 \begin_inset Formula $p_{i;\,j}\left(x\right)$
 \end_inset
@@ -774,7 +969,7 @@ end{flushright}
 \end_layout
 
 \begin_layout Subsection
-הוכחה:
+הוכחה
 \end_layout
 
 \begin_layout Frame
@@ -815,6 +1010,22 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1288,6 +1499,30 @@ S & =\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}=\frac{n^{2}}{2}+\frac{n}{2}=\\
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 ומכאן, הגענו לזמן ריצה של 
 \begin_inset Formula $O\left(n^{2}\right)$
 \end_inset
@@ -2164,6 +2399,26 @@ begin{flushright}
 
 \size large
 כעת, נערוך השוואה עם טכניקות אינטרפולאצייה אחרות כמו:
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
