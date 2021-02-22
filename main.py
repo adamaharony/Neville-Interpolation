@@ -51,7 +51,7 @@ def neville(x_data, y_data, x_arr):
     return y_fit, Q_arr
 
 
-def lagrange_point(x_data, y_data, x0):
+def lagrange_point(x_data, y_data, x_0):
     """
        Interpolates around a point using Lagrange's method.
 
@@ -68,7 +68,7 @@ def lagrange_point(x_data, y_data, x0):
         p = y_data[i]
         for j in range(0, n):
             if i != j:
-                p = p * (x0 - x_data[j]) / (x_data[i] - x_data[j])
+                p = p * (x_0 - x_data[j]) / (x_data[i] - x_data[j])
         y_fit += p
 
     return y_fit
