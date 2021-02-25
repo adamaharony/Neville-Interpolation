@@ -1,1 +1,1 @@
-python compare.py
+.\venv\Scripts\python.exe compare.py
