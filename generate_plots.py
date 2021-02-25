@@ -28,7 +28,7 @@ def plot_and_test(x_data, y_data, index=0):
         :param index: index of the plot
     """
 
-    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 100)
+    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 10000)
     y_fit, Q_arr = neville(x_data, y_data, x_arr)
 
     plt.figure(figsize=(8, 3))
@@ -50,7 +50,7 @@ def plot_and_compare(x_data, y_data, index=0):
         :param index: index of the plot
     """
 
-    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 100)
+    x_arr = np.linspace(x_data[0] - 0.25, x_data[len(x_data) - 1] + 0.25, 10000)
     y_fit_neville, Q_arr = neville(x_data, y_data, x_arr)
     P = np.polyfit(x_data, y_data, x_data.size - 1)
     y_fit_polyfit = np.polyval(P, x_arr)
