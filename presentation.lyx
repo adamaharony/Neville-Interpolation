@@ -120,7 +120,7 @@ shapepar
 \begin_inset Newline newline
 \end_inset
 
-אינטרפולאציית 
+אינטרפולציית 
 \lang english
 Neville
 \end_layout
@@ -189,7 +189,7 @@ literal "false"
 \end_layout
 
 \begin_layout Date
-יום חמישי,
+יום שני,
 \family sans
 \series medium
 \shape up
@@ -281,7 +281,7 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
-במסגרת פרוייקט זה, נסביר, נפרט, ונראה בפעולה על שיטת האינטרפולאצייה לפי
+במסגרת פרוייקט זה, נסביר, נפרט, ונראה בפעולה על שיטת האינטרפולצייה לפי
 \family sans
 \series medium
 \shape up
@@ -311,7 +311,7 @@ begin{flushright}
 Neville
 \lang hebrew
 .
- נוכיח גם איך היא עובדת, נראה דוגמאות, וכן נשווה מול שיטות אינטרפולאצייה
+ נוכיח גם איך היא עובדת, נראה דוגמאות, וכן נשווה מול שיטות אינטרפולצייה
  אחרות שלמדנו בקורס.
 \end_layout
 
@@ -336,7 +336,7 @@ vfill
 \end_layout
 
 \begin_layout Frame
-במסגרת הפרוייקט הרחבנו את אופקינו בתחום האנאליזה הנומרית והאינטרפולאצייה.
+במסגרת הפרוייקט הרחבנו את אופקינו בתחום האנאליזה הנומרית והאינטרפולצייה.
 \end_layout
 
 \begin_layout Frame
@@ -398,7 +398,7 @@ Neville
 \uwave default
 \noun default
 \color inherit
-עד תום, ובכך נתן לנו מקור להשוואה עם שיטות אינטרפולאצייה אחרות.
+עד תום, ובכך נתן לנו מקור להשוואה עם שיטות אינטרפולצייה אחרות.
 \end_layout
 
 \begin_layout Frame
@@ -463,7 +463,7 @@ begin{flushright}
 \begin_inset Formula $\leq n$
 \end_inset
 
- העובר דרך הנקודות הנ.ל..
+ העובר דרך הנקודות.
  באמצעות שיטת
 \family sans
 \series medium
@@ -552,7 +552,7 @@ vfill
 \begin_inset Text
 
 \begin_layout Plain Layout
-השיטה מבוססת על שיטת האינטרפולאצייה של ניוטון
+השיטה מבוססת על שיטת האינטרפולצייה של ניוטון
 \family sans
 \series medium
 \shape up
@@ -658,7 +658,7 @@ end{flushright}
 \end_layout
 
 \begin_layout Subsection
-פולינום האינטרפולאצייה
+פולינום האינטרפולצייה
 \end_layout
 
 \begin_layout Frame
@@ -666,7 +666,7 @@ end{flushright}
 status open
 
 \begin_layout Plain Layout
-פולינום האינטרפולאצייה:
+פולינום האינטרפולצייה:
 \end_layout
 
 \end_inset
@@ -707,7 +707,7 @@ begin{flushright}
 \begin_inset Formula $x$
 \end_inset
 
- שונים, פולינום האינטרפולאצייה הוא פולינום מסדר של לפחות 
+ שונים, פולינום האינטרפולצייה הוא פולינום מסדר של לפחות 
 \begin_inset Formula $n$
 \end_inset
 
@@ -822,7 +822,7 @@ Neville
 \uwave default
 \noun default
 \color inherit
-מוצאת את ערך פולינום האינטרפולאצייה הנ.ל.
+מוצאת את ערך פולינום האינטרפולצייה הנ.ל.
  בנקודה 
 \begin_inset Formula $x$
 \end_inset
@@ -896,7 +896,7 @@ end{flushright}
 \end_layout
 
 \begin_layout Subsection
-מאפייניי פולינום האינטרפולאצייה
+מאפייניי פולינום האינטרפולצייה
 \end_layout
 
 \begin_layout Frame
@@ -942,7 +942,7 @@ p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\
 
 \end_inset
 
-נוסחת הנסיגה הזו יכולה לחשב את 
+נוסחת הרקורסייה הזו יכולה לחשב את 
 \begin_inset Formula $p_{0;\,n}\left(x\right)$
 \end_inset
 
@@ -1491,7 +1491,7 @@ begin{flushright}
 \end_layout
 
 \begin_layout Frame
-מדובר בסכום סדרה חשבונית סטאנדארטית.
+מדובר בסכום סדרה חשבונית סטנדרטית.
  לא קשה לראות שהסכום מקיים:
 \begin_inset Formula 
 \begin{align*}
@@ -1558,7 +1558,112 @@ end{flushright}
 \end_layout
 
 \begin_layout Section
-דוגמאות לאחר הרצה:
+דוגמאות לאחר הרצה
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\series bold
+\size giant
+\color pink
+דוגמאות
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="90text%">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+רוב הפונקציות באו מהרצאות, תרגולים, ומטלות בית.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\color pink
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1642,7 +1747,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -1676,7 +1781,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -1774,7 +1879,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -1808,7 +1913,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -1910,7 +2015,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -1944,7 +2049,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -2042,7 +2147,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -2076,7 +2181,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -2174,7 +2279,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -2208,7 +2313,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -2306,7 +2411,7 @@ N
 
 \begin_deeper
 \begin_layout Standard
-הפונקצייה לפני אינטרפולאצייה:
+הפונקצייה לפני אינטרפולצייה:
 \end_layout
 
 \end_deeper
@@ -2340,7 +2445,7 @@ N
 \end_layout
 
 \begin_layout Frame
-הפונקצייה אחרי אינטרפולאצייה:
+הפונקצייה אחרי אינטרפולצייה:
 \end_layout
 
 \begin_layout Frame
@@ -2365,7 +2470,7 @@ N
 \end_layout
 
 \begin_layout Section
-השוואה:
+השוואה
 \end_layout
 
 \begin_layout Frame
@@ -2400,7 +2505,7 @@ begin{flushright}
 \begin_layout Frame
 
 \size large
-כעת, נערוך השוואה עם טכניקות אינטרפולאצייה אחרות כמו:
+כעת, נערוך השוואה עם טכניקות אינטרפולצייה אחרות כמו:
 \end_layout
 
 \begin_layout Frame
@@ -2438,7 +2543,7 @@ vfill
 \begin_layout Plain Layout
 
 \size large
-אינטרפולאצייה לפי לאגראנז' 
+אינטרפולצייה לפי לאגראנז' 
 \lang english
 (Lagrange)
 \end_layout
@@ -2468,7 +2573,7 @@ vfill
 \begin_layout Plain Layout
 
 \size large
-אינטרפולאצייה לפי 
+אינטרפולצייה לפי 
 \family typewriter
 \lang english
 numpy.polyfit
