@@ -505,7 +505,7 @@ Neville
 \noun off
 \color none
 \lang hebrew
- ניתן להגיע לערך אותו פולינום בנקודה כלשהי.
+ ניתן להגיע אליו, או במקרה שלנו, לערך שלו בנקודה כלשהי.
 \begin_inset Newline newline
 \end_inset
 
@@ -946,7 +946,7 @@ p_{i;\,j}\left(x\right) & =\frac{\left(x-x_{j}\right)p_{i;\,j-1}\left(x\right)-\
 \begin_inset Formula $p_{0;\,n}\left(x\right)$
 \end_inset
 
-, שהוא הערך אותו אנו מחפשים.
+, שהוא הפולינום אותו אנו מחפשים.
  
 \end_layout
 
@@ -1438,8 +1438,8 @@ begin{flushright}
 מכאן, גודל הפולינומים שמחשבים מובא על ידיי:
 \begin_inset Formula 
 \begin{align*}
-n+\left(n-1\right)+\left(n-2\right)+\dots+1 & =\\
- & =\sum_{i=1}^{n}i
+\left(n+1\right)+n+\left(n-1\right)+\left(n-2\right)+\dots+1 & =\\
+ & =\sum_{i=1}^{n+1}i
 \end{align*}
 
 \end_inset
@@ -1493,9 +1493,28 @@ begin{flushright}
 \begin_layout Frame
 מדובר בסכום סדרה חשבונית סטנדרטית.
  לא קשה לראות שהסכום מקיים:
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 \begin_inset Formula 
 \begin{align*}
-S & =\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}=\frac{n^{2}}{2}+\frac{n}{2}=\\
+S & =\sum_{i=1}^{n+1}i=\frac{\left(n+1\right)\left(n+2\right)}{2}=\frac{n^{2}+3n+2}{2}=\\
  & =\boxed{O\left(n^{2}\right)}
 \end{align*}
 
@@ -1557,6 +1576,804 @@ end{flushright}
 
 \end_layout
 
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+זמן ריצת הקוד שלנו
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+זמן ריצת התוכנית כולה:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+קיימות שתי דרכים ליישום שיטת
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Neville
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בקוד
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Python
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="90text%">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שיטת פתירת הרקורסייה לכל ערך של 
+\begin_inset Formula $x$
+\end_inset
+
+ בנפרד.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color pink
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שיטת פתירת הרקורסייה פעם אחת באופן סימבולי, ואז הצבה עבור כל ערכי ה-
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color pink
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+שיטת פתירת הרקורסייה לכל ערך 
+\begin_inset Formula $x$
+\end_inset
+
+ בנפרד:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+בשיטה זו, נציב עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ערכים בתחום כלשהו ובמרווח שווה )
+\family typewriter
+\lang english
+numpy.linspace
+\family default
+\lang hebrew
+( ונחשב לכל ערך 
+\begin_inset Formula $x$
+\end_inset
+
+ את ערך הפולינום באותה נקודה.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+למשל: עבור הערך 
+\begin_inset Formula $x=1$
+\end_inset
+
+ נחשב את ערך הפולינום בדוגמה הקודמת כך:
+\size scriptsize
+
+\begin_inset Formula 
+\[
+\begin{matrix}p_{0;\,0}\left(1\right)=y_{0}\\
+ & p_{0;\,1}\left(1\right)\\
+p_{1;\,1}\left(1\right)=y_{1} &  & p_{0;\,2}\left(1\right)\\
+ & p_{1;\,2}\left(1\right) &  & p_{0;\,3}\left(1\right)\\
+p_{2;\,2}\left(1\right)=y_{2} &  & p_{1;\,3}\left(1\right) &  & \boxed{p_{0;\,4}\left(1\right)}\\
+ & p_{2;\,3}\left(1\right) &  & p_{1;\,4}\left(1\right)\\
+p_{3;\,3}\left(1\right)=y_{3} &  & p_{2;\,4}\left(1\right)\\
+ & p_{3;\,4}\left(1\right)\\
+p_{4;\,4}\left(1\right)=y_{4}
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+בגלל שנצטרך להפעיל את האלגוריתם על כל 
+\begin_inset Formula $k$
+\end_inset
+
+ נקודות הדגימה זמן הריצה של האלגוריתם יהיה בסדר גודל של 
+\begin_inset Formula $O\left(kn^{2}\right)$
+\end_inset
+
+, בהתחשב בכך ש-
+\begin_inset Formula $k$
+\end_inset
+
+ גדול באופן משמעותי מ-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+את אלגוריתם זה ניתן לממש בספריית
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NumPy
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+שיטת פתירת הרקורסייה באופן סימבולי:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+בשיטה זו, ראשית נפתור את הנוסחה הרקורסיבית באופן סימבולי, ואז נציב עבור
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ ערכים בתחום כלשהו ובמרווח שווה )
+\family typewriter
+\lang english
+numpy.linspace
+\family default
+\lang hebrew
+( ונחשב לכל ערך 
+\begin_inset Formula $x$
+\end_inset
+
+ את ערך הפולינום באותה נקודה.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+בגלל שנצטרך להפעיל את האלגוריתם רק פעם אחת, ואז להציב 
+\begin_inset Formula $k$
+\end_inset
+
+ ערכים בפולינום המתקבל, זמן הריצה של האלגוריתם יהיה בסדר גודל של 
+\begin_inset Formula $O\left(n^{2}+k\right)$
+\end_inset
+
+, או ברוב המקרים 
+\begin_inset Formula $O\left(k\right)$
+\end_inset
+
+, בהתחשב בכך ש-
+\begin_inset Formula $k$
+\end_inset
+
+ גדול באופן משמעותי מ-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+את אלגוריתם זה ניתן לממש בספריית
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SymPy
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+בחירה באלגוריתם
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+בחירה באלגוריתם הראשון:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+למרות שבמבט ראשון ניתן לחשוב שהאלגוריתם השני עדיף על הראשון, יש לזכור כי
+ ספריית
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+SymPy
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איטית משמעותית מ-
+\lang english
+NumPy
+\lang hebrew
+, ולכן בחרנו באלגוריתם המהיר יותר.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+)ההפרש בין סדרי הגודל של זמני הריצה אמנם קריטי על הנייר, אך בפועל לא(
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 דוגמאות לאחר הרצה
 \end_layout
@@ -1566,11 +2383,47 @@ end{flushright}
 \end_layout
 
 \begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \series bold
 \size giant
 \color pink
 דוגמאות
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Frame
