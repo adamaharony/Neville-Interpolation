@@ -12,6 +12,7 @@ def neville_point(x_data, y_data, x_0):
         :returns y_fit:  interpolated y value
         :returns Q: Coefficient matrix
     """
+    
     n = x_data.size
     # Initialising coeff matrix
     Q = np.zeros((n, n - 1))
