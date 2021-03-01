@@ -707,7 +707,7 @@ begin{flushright}
 \begin_inset Formula $x$
 \end_inset
 
- שונים, פולינום האינטרפולצייה הוא פולינום מסדר של לפחות 
+ שונים, פולינום האינטרפולצייה הוא פולינום מסדר של לכל היותר 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1074,7 +1074,7 @@ vfill
 \[
 \begin{cases}
 p_{i;\,j-1}\left(x_{k}\right)=y_{k} & i\leq k\leq j-1\\
-p_{i+1;\,j}\left(x_{k}\right)=y_{k} & i-1\leq k\leq j
+p_{i+1;\,j}\left(x_{k}\right)=y_{k} & i+1\leq k\leq j
 \end{cases}
 \]
 
